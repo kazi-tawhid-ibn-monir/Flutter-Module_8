@@ -10,7 +10,18 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.deepPurple,
           title: Center(
@@ -22,19 +33,10 @@ class myApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-
+            TextField()
           ],
         ),
       ),
     );
-  }
-}
-
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
